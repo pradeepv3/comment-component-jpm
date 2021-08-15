@@ -1,0 +1,60 @@
+.App {
+}
+
+.comments {
+    padding: 20px;
+
+    &-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &_label {
+            padding: 0 0 15px;
+        }
+
+        &_input {
+            min-height: 100px;
+            width: 100%;
+            border: 1px solid #ccc;
+            margin: 0 0 15px;
+        }
+
+        &_button {
+            border-radius: 5px;
+            padding: 10px;
+            border: 0;
+            background: #424ef8;
+            color: white;
+            cursor: pointer;
+
+            &:disabled {
+                background: #f1f2f3;
+                color: #929292;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &-card {
+        padding: 20px 0;
+
+        &_item {
+            margin: 0 0 15px;
+            background-color: #f1f2f3;
+            color: #333;
+            border-radius: 5px;
+            padding: 7px;
+            cursor: pointer;
+            &:hover {
+                background: #ccc;
+            }
+        }
+
+        &_empty {
+            padding: 10px;
+            text-align: center;
+            background: palevioletred;
+        }
+    }
+}
